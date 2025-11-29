@@ -1,44 +1,11 @@
 'use client';
 
 import React from 'react'
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const page = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Header */}
-      <motion.header 
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-blue-600 text-white shadow-lg"
-      >
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <motion.h1 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-2xl font-bold"
-            >
-              Mi Portafolio
-            </motion.h1>
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="hidden md:flex space-x-6"
-            >
-              <Link href="/" className="hover:text-blue-200 transition-colors">Inicio</Link>
-              <Link href="/sobre-mi" className="hover:text-blue-200 transition-colors">Sobre Mí</Link>
-              <Link href="/formacion" className="hover:text-blue-200 transition-colors">Formación</Link>
-              <Link href="/servicios" className="hover:text-blue-200 transition-colors">Servicios</Link>
-            </motion.div>
-          </div>
-        </nav>
-      </motion.header>
-
       {/* Content */}
       <main className="container mx-auto px-6 py-16">
         <motion.div
@@ -64,16 +31,16 @@ const page = () => {
               <div className="space-y-4">
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
                   <h3 className="font-semibold text-gray-800 dark:text-white">Grado en Informática</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Universidad [Nombre] | 2021 - Presente</p>
+                  <p className="text-gray-600 dark:text-gray-300">Instituto THEPOWER ACADEMY | 2024 - Presente</p>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
-                    Especialización en Ciberseguridad y Redes
+                    Grado de Sistemas Microinformáticos y Redes 
                   </p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-800 dark:text-white">Bachillerato Tecnológico</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Instituto [Nombre] | 2019 - 2021</p>
+                  <h3 className="font-semibold text-gray-800 dark:text-white">Bachillerato Ciencias</h3>
+                  <p className="text-gray-600 dark:text-gray-300">Instituto iES JIMENEZ LANDI | 2021 - 2023</p>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
-                    Especialidad en Informática
+                    1er y 2do año cursado
                   </p>
                 </div>
               </div>
@@ -90,17 +57,17 @@ const page = () => {
               </h2>
               <div className="space-y-4">
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-800 dark:text-white">CompTIA Security+</h3>
-                  <p className="text-gray-600 dark:text-gray-300">En Progreso | 2024</p>
+                  <h3 className="font-semibold text-gray-800 dark:text-white">Cisco Networking Academy</h3>
+                  <p className="text-gray-600 dark:text-gray-300">2024</p>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
-                    Fundamentos de seguridad informática
+                    Configuración de dispositivos, asignación de IPs y pruebas de conectividad
                   </p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-800 dark:text-white">Cisco CCNA</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Planificado | 2024</p>
+                  <h3 className="font-semibold text-gray-800 dark:text-white">Phython Institute</h3>
+                  <p className="text-gray-600 dark:text-gray-300">2025 | Presente</p>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
-                    Redes y conectividad
+                    Python Essentials
                   </p>
                 </div>
               </div>
@@ -113,27 +80,26 @@ const page = () => {
               className="bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-6"
             >
               <h2 className="text-2xl font-semibold text-purple-600 dark:text-purple-400 mb-4">
-                Cursos y Talleres
+                EXPERIENCIA
               </h2>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="space-y-4">
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-800 dark:text-white">Python para Ciberseguridad</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Online | 2023</p>
+                  <h3 className="font-semibold text-gray-800 dark:text-white">Carpintero de aluminio</h3>
+                  <p className="text-gray-600 dark:text-gray-300">Julio 2023 - Junio 2024</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
+                    Fabricación e instalación de estructuras de aluminio. Manejo de herramientas eléctricas y medición precisa.
+                  </p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-800 dark:text-white">Análisis de Malware</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Workshop | 2023</p>
-                </div>
-                <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-800 dark:text-white">Ethical Hacking Básico</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Online | 2022</p>
-                </div>
-                <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-800 dark:text-white">Redes Informáticas</h3>
-                  <p className="text-gray-600 dark:text-gray-300">Curso | 2022</p>
+                  <h3 className="font-semibold text-gray-800 dark:text-white">Mesero</h3>
+                  <p className="text-gray-600 dark:text-gray-300">Septiembre 2024 - Octubre 2024</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
+                    Atención al cliente, toma de pedidos y coordinación en equipo.
+                  </p>
                 </div>
               </div>
             </motion.div>
+
           </div>
         </motion.div>
       </main>

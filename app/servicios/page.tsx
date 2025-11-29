@@ -7,38 +7,6 @@ import { motion } from 'framer-motion';
 const page = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Header */}
-      <motion.header 
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-blue-600 text-white shadow-lg"
-      >
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <motion.h1 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-2xl font-bold"
-            >
-              Mi Portafolio
-            </motion.h1>
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="hidden md:flex space-x-6"
-            >
-              <Link href="/" className="hover:text-blue-200 transition-colors">Inicio</Link>
-              <Link href="/sobre-mi" className="hover:text-blue-200 transition-colors">Sobre Mí</Link>
-              <Link href="/formacion" className="hover:text-blue-200 transition-colors">Formación</Link>
-              <Link href="/servicios" className="hover:text-blue-200 transition-colors">Servicios</Link>
-            </motion.div>
-          </div>
-        </nav>
-      </motion.header>
-
       {/* Content */}
       <main className="container mx-auto px-6 py-16">
         <motion.div
